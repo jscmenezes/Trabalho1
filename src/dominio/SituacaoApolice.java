@@ -1,8 +1,12 @@
 
 package dominio;
 
-public class SituacaoApolice {
+public enum SituacaoApolice {
     
-    private String nome;
+    private final String nome;
+    
+    private SituacaoApolice(String nome){
+
+}
     
 }
