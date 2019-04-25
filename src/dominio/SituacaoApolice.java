@@ -3,10 +3,17 @@ package dominio;
 
 public enum SituacaoApolice {
     
-    private final String nome;
+    NEGOCIACAO(1), CANCELADA(2), QUITADA(3), PARCELADA(4);
     
-    private SituacaoApolice(String nome){
-
-}
+    private final int valor;
+    
+    SituacaoApolice(int valorOpcao){
+        valor = valorOpcao;
+    }
+    
+    public int getValor(){
+        return valor;
+    }
+    
     
 }
