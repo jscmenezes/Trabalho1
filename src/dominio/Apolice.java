@@ -8,13 +8,13 @@ public class Apolice {
     private long numero;
     private Date data;
     private Date dataValidade;
-    private int situacao;
     private String seguradora;
+    private SituacaoApolice situacao;
 
     public Apolice() {
     }
 
-    public Apolice(long numero, Date data, Date dataValidade, int situacao, String seguradora) {
+    public Apolice(long numero, Date data, Date dataValidade, SituacaoApolice situacao, String seguradora) {
         this.numero = numero;
         this.data = data;
         this.dataValidade = dataValidade;
@@ -46,11 +46,11 @@ public class Apolice {
         this.dataValidade = dataValidade;
     }
 
-    public int getSituacao() {
+    public SituacaoApolice getSituacao() {
         return situacao;
     }
 
-    public void setSituacao(int situacao) {
+    public void setSituacao(SituacaoApolice situacao) {
         this.situacao = situacao;
     }
 

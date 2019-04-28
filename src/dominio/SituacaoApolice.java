@@ -3,17 +3,32 @@ package dominio;
 
 public enum SituacaoApolice {
     
-    NEGOCIACAO(1), CANCELADA(2), QUITADA(3), PARCELADA(4);
+    NEGOCIACAO("Em negociacao", 1), 
+    CANCELADA("Cancelada", 2), 
+    QUITADA("Quitado", 3),
+    PARCELADA("Parcelada", 4);
     
+    private final String nome;
     private final int valor;
     
-    SituacaoApolice(int valorOpcao){
-        valor = valorOpcao;
+    SituacaoApolice(String n, int v){
+        nome = n;
+        valor = v;
     }
     
-    public int getValor(){
+    public String getNome(){
+        return nome;
+    }
+
+    public int getValor() {
         return valor;
     }
+    
+    @Override
+    public String toString() {
+        return "SituacaoApolice{valor=" + valor + ", nome=" + nome + '}';
+    }
+    
     
     
 }
