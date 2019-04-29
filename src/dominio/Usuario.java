@@ -40,7 +40,7 @@ public class Usuario extends Pessoa {
 
     @Override
     public String toString() {
-        return "Usuario{" + "identificador=" + identificador + ", senha=" + senha + '}';
+        return "Usuario{" + super.toString() + ",identificador=" + identificador + ", senha=" + senha + '}';
     }
     
     
